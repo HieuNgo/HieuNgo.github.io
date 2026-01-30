@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hieu (Henry) Ngo, Ph.D. — Portfolio</title>
+  <meta name="description" content="Portfolio of Hieu (Henry) Ngo — machine learning, applied & computational mathematics, data science." />
+  <meta property="og:title" content="Hieu (Henry) Ngo, Ph.D. — Portfolio" />
+  <meta property="og:description" content="Trustworthy ML, federated learning, applied modeling, visualization-aided validation." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">HN</div>
+        <div>
+          <h1>Hieu (Henry) Ngo, Ph.D.</h1>
+          <p class="tagline">Postdoctoral Researcher · Trustworthy ML • Federated/Distributed Learning • Applied & Computational Mathematics</p>
+          <p class="meta">
+            Union City, NJ · <a href="mailto:hngo1@umassd.edu">hngo1@umassd.edu</a> · 
+            <a href="https://www.linkedin.com/in/hieu-ngo-014901a3/" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I am a postdoctoral researcher at Yeshiva University focused on building <strong>secure, privacy-preserving, and trustworthy AI/ML</strong> for real-world, high-dimensional data. 
+        My work integrates <strong>federated learning</strong>, <strong>fuzzy clustering</strong>, and <strong>visualization-aided validation</strong> with applications in digital health, IoT/CPS, and data systems for AI.
+      </p>
+      <ul class="compact">
+        <li>Ph.D., Computer & Information Science — UMass Dartmouth</li>
+        <li>2021 IEEE ComSoc MCTC Best Paper Award</li>
+        <li>NSF/NIH project experience (privacy-aware analytics; cooperative perception/V2X)</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Selected Publications</h2>
+      <ol class="pubs">
+        <li>
+          Ngo, H., Fang, H., Wang, H. <em>AI-enabled Federated Unsupervised Learning in Longitudinal Digital Trials</em>. 
+          IEEE TNNLS (submitted).
+        </li>
+        <li>
+          Ngo, H., Fang, H., Rumbut, J., Wang, H. <em>Federated fuzzy clustering for decentralized incomplete longitudinal behavioral data</em>. 
+          <strong>IEEE Internet of Things Journal</strong>, 2023.
+        </li>
+        <li>
+          Ngo, H., Fang, H., Wang, H. <em>Cooperative Perception With V2V Communication for Autonomous Vehicles</em>. 
+          <strong>IEEE Transactions on Vehicular Technology</strong>, 2023.
+        </li>
+        <li>
+          Cornet, B., Fang, H., <strong>Ngo, H.</strong>, Boyer, E., Wang, H. <em>An Overview of Wireless Body Area Networks for Mobile Health Applications</em>. 
+          <strong>IEEE Network</strong>, 2022.
+        </li>
+      </ol>
+      <p class="small"><a href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">Full list on Google Scholar →</a></p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>Federated Longitudinal Modeling</h3>
+          <p>PyTorch + Lightning pipeline for multi-site time-series; privacy-preserving training/evaluation, uncertainty reporting; AWS orchestration.</p>
+          <p class="tech">PyTorch · Lightning · AWS · HF Datasets</p>
+        </article>
+        <article class="tile">
+          <h3>Representation Learning for Retrieval</h3>
+          <p>Embedding-based similarity search over heterogeneous clinical signals; VectorDB-style indexing for cohorting and audit.</p>
+          <p class="tech">VectorDB · Retrieval · Evaluation</p>
+        </article>
+        <article class="tile">
+          <h3>Robustness & Explainability Toolkit</h3>
+          <p>Perturbation tests, ablations, SHAP-style attribution for incomplete/irregular data; reporting templates aligned to product goals.</p>
+          <p class="tech">Explainability · Robustness · Reporting</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="teaching" class="card">
+      <h2>Teaching</h2>
+      <ul>
+        <li><strong>Robotics (Spring 2026)</strong>, Yeshiva University — perception, detection/tracking, navigation; project-based labs.</li>
+        <li><strong>Machine Learning / Advanced Data Mining (GTA)</strong>, UMass Dartmouth — tutorials and labs for regression, trees/ensembles, PCA, evaluation; Python/R/MATLAB workflows.</li>
+        <li><strong>Computer Graphics (GTA)</strong>, UMass Dartmouth — WebGL/Three.js labs on geometry, lighting, animation, texturing.</li>
+      </ul>
+    </section>
+
+    <section id="cv" class="card">
+      <h2>CV</h2>
+      <p>Download my latest CV: <a href="#" id="cv-link">Coming soon (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hieu (Henry) Ngo. Built with HTML/CSS/JS. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
