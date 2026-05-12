@@ -3,126 +3,551 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hieu (Henry) Ngo, Ph.D. — Portfolio</title>
-  <meta name="description" content="Portfolio of Hieu (Henry) Ngo — machine learning, applied & computational mathematics, data science." />
-  <meta property="og:title" content="Hieu (Henry) Ngo, Ph.D. — Portfolio" />
-  <meta property="og:description" content="Trustworthy ML, federated learning, applied modeling, visualization-aided validation." />
+  <title>Hieu (Henry) Ngo, Ph.D. — AI Research Scientist</title>
+  <meta name="description" content="Portfolio of Hieu (Henry) Ngo — AI research scientist specializing in federated learning, health AI, computer vision, and LLM-based agentic systems." />
+  <meta property="og:title" content="Hieu (Henry) Ngo, Ph.D. — AI Research Scientist" />
+  <meta property="og:description" content="Federated learning · Health AI · Computer Vision · LLM Agents · IEEE Publications" />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#060d1a" />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="avatar" aria-hidden="true">HN</div>
-        <div>
-          <h1>Hieu (Henry) Ngo, Ph.D.</h1>
-          <p class="tagline">Postdoctoral Researcher · Trustworthy ML • Federated/Distributed Learning • Applied & Computational Mathematics</p>
-          <p class="meta">
-            Union City, NJ · <a href="mailto:ngohieu241@gmail.com">ngohieu241@gmail.com</a> · 
-            <a href="https://www.linkedin.com/in/hieu-ngo-014901a3/" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
-            <!-- <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> -->
-          </p>
+
+<!-- ── Sticky Nav ─────────────────────────────────────────────────────── -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <span class="nav-brand">Hieu Ngo</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ──────────────────────────────────────────────────────────── -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="avatar-ring" aria-hidden="true">HN</div>
+    <div class="hero-text">
+      <h1>Hieu <span class="accent">(Henry)</span> Ngo, Ph.D.</h1>
+      <p class="hero-sub">
+        AI Research Scientist &nbsp;·&nbsp; Postdoctoral Researcher, Yeshiva University &nbsp;·&nbsp; New York, NY<br>
+        Federated Learning &nbsp;·&nbsp; Health AI &nbsp;·&nbsp; Computer Vision &nbsp;·&nbsp; LLM Agents
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">📄 Google Scholar</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/hieu-ngo-014901a3/" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/HieuNgo" target="_blank" rel="noopener">⌨ GitHub</a>
+        <a class="btn btn-ghost" href="https://orcid.org/0000-0003-2595-2166" target="_blank" rel="noopener">🔬 ORCID</a>
+        <a class="btn btn-ghost" href="assets/Hieu_Ngo_Resume.pdf" target="_blank" rel="noopener">⬇ CV / Resume</a>
+        <a class="btn btn-ghost" href="mailto:ngohieu241@gmail.com">✉ Email</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── Stats Bar ─────────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="container stats-inner">
+    <div class="stat"><div class="stat-num">382+</div><div class="stat-label">Citations</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">h-index</div></div>
+    <div class="stat"><div class="stat-num">16</div><div class="stat-label">Publications</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Journal Papers</div></div>
+    <div class="stat"><div class="stat-num">35.6</div><div class="stat-label">Top IF (Comm. Surveys)</div></div>
+    <div class="stat"><div class="stat-num">3M+</div><div class="stat-label">Health Records Analyzed</div></div>
+  </div>
+</div>
+
+<main class="container">
+
+<!-- ── About ─────────────────────────────────────────────────────────── -->
+<section id="about">
+  <h2 class="section-title">About</h2>
+  <p class="about-lead">
+    I am an AI research scientist and postdoctoral researcher at the <strong>XR AI Lab, Yeshiva University</strong> (Katz School of Science &amp; Health, New York). My research focuses on building <strong>privacy-preserving, federated machine learning systems</strong> for large-scale clinical and behavioral data — designing algorithms that work across heterogeneous multi-site datasets without centralizing sensitive records.
+    <br><br>
+    My current projects are <strong>FUSE</strong> (federated fuzzy consensus clustering for incomplete multi-site longitudinal health data, under review at <em>ACM Trans. Computing for Healthcare</em>) and <strong>FedAutoCluster</strong> (federated clustering where per-site QLoRA-finetuned LLM agents autonomously select ML pipelines, in preparation). Prior work includes real-time <strong>BEV-map V2V cooperative perception</strong> for autonomous vehicles and <strong>mmWave WBAN beamforming</strong> (IEEE Best Paper Award, 2020).
+  </p>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>Research Areas</h3>
+      <div class="tag-list">
+        <span class="tag">Federated Learning</span>
+        <span class="tag">Health AI</span>
+        <span class="tag">Privacy-Preserving ML</span>
+        <span class="tag cyan">Computer Vision</span>
+        <span class="tag cyan">V2V Perception</span>
+        <span class="tag purple">LLM Fine-tuning</span>
+        <span class="tag purple">Agentic AI</span>
+        <span class="tag green">Clinical Data Science</span>
+        <span class="tag green">Longitudinal Trials</span>
+        <span class="tag">Unsupervised Learning</span>
+        <span class="tag">Missing-Data Methods</span>
+      </div>
+    </div>
+    <div class="about-card">
+      <h3>Tools &amp; Stack</h3>
+      <div class="tag-list">
+        <span class="tag gold">Python</span>
+        <span class="tag gold">PyTorch</span>
+        <span class="tag gold">Hugging Face</span>
+        <span class="tag gold">PyTorch Lightning</span>
+        <span class="tag purple">LangChain</span>
+        <span class="tag purple">LangGraph</span>
+        <span class="tag purple">QLoRA</span>
+        <span class="tag green">SQL</span>
+        <span class="tag green">SAS</span>
+        <span class="tag cyan">CUDA / GPU</span>
+        <span class="tag cyan">Linux / HPC</span>
+        <span class="tag">MATLAB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Projects ───────────────────────────────────────────────────────── -->
+<section id="projects">
+  <h2 class="section-title">Research Projects</h2>
+  <div class="projects-grid">
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <span class="proj-name">FUSE</span>
+        <span class="badge badge-review">Under Review</span>
+      </div>
+      <div class="proj-venue">ACM Transactions on Computing for Healthcare</div>
+      <p class="proj-desc">
+        End-to-end federated fuzzy clustering system for <strong>incomplete multi-site longitudinal health data</strong>. Architecture: lossless FeFCM protocol, fuzzy co-association + NMF permutation-invariant consensus aggregation, GapDB composite automatic (K,m) selection, and visualization-aided validation — all without sharing raw records.
+      </p>
+      <div class="metrics">
+        <span class="metric blue">6 datasets validated</span>
+        <span class="metric green">3M+ health records</span>
+        <span class="metric cyan">88% structural missingness</span>
+        <span class="metric purple">31:1 site imbalance</span>
+        <span class="metric gold">ARI: 0.494 → 0.593</span>
+      </div>
+      <div class="stack">
+        <span class="stack-item">PyTorch</span>
+        <span class="stack-item">Federated Learning</span>
+        <span class="stack-item">Fuzzy Clustering</span>
+        <span class="stack-item">NMF</span>
+        <span class="stack-item">Missing Data</span>
+        <span class="stack-item">Health AI</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <span class="proj-name">FedAutoCluster</span>
+        <span class="badge badge-prep">In Preparation</span>
+      </div>
+      <div class="proj-venue">Distilling Clustering Expert Judgment into Federated Per-Site LLM Agents</div>
+      <p class="proj-desc">
+        Federated clustering framework where each site runs a <strong>QLoRA-finetuned LLM agent</strong> (Qwen-7B/72B) that autonomously selects its own clustering pipeline and cluster count K from a <strong>49,920-configuration space</strong>. Two-tier orchestrator (method-specific protocol + trust-weighted EMA fallback) handles cross-site heterogeneity.
+      </p>
+      <div class="metrics">
+        <span class="metric blue">49,920-config space</span>
+        <span class="metric green">1,915 expert trajectories</span>
+        <span class="metric cyan">246 datasets (held out)</span>
+        <span class="metric purple">MIMIC-eICU validation</span>
+      </div>
+      <div class="stack">
+        <span class="stack-item">QLoRA</span>
+        <span class="stack-item">Qwen-7B/72B</span>
+        <span class="stack-item">Federated Learning</span>
+        <span class="stack-item">Agentic AI</span>
+        <span class="stack-item">LLM Fine-tuning</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <span class="proj-name">V2V Cooperative Perception</span>
+        <span class="badge badge-pub">Published · IEEE TVT</span>
+      </div>
+      <div class="proj-venue">IEEE Transactions on Vehicular Technology (IF 6.1, 73 citations)</div>
+      <p class="proj-desc">
+        BEV-map based V2V collaborative perception system for autonomous vehicles that resolves occlusion without sharing raw LiDAR. Tested on <strong>KITTI</strong> — achieves real-time throughput exceeding the 10 Hz requirement. Bandwidth analysis demonstrates the feasibility of BEV-map sharing over V2V links.
+      </p>
+      <div class="metrics">
+        <span class="metric blue">0.0456 s/frame latency</span>
+        <span class="metric green">~21.9 Hz throughput</span>
+        <span class="metric cyan">BEV 1.1 Mb vs LiDAR 4,000 Mb</span>
+        <span class="metric gold">73 citations</span>
+      </div>
+      <div class="stack">
+        <span class="stack-item">PyTorch</span>
+        <span class="stack-item">Computer Vision</span>
+        <span class="stack-item">BEV Maps</span>
+        <span class="stack-item">KITTI</span>
+        <span class="stack-item">V2V Communication</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <span class="proj-name">FeMIFuzzy</span>
+        <span class="badge badge-pub">Published · IEEE IoT Journal</span>
+      </div>
+      <div class="proj-venue">IEEE Internet of Things Journal (IF 8.2, 14 citations)</div>
+      <p class="proj-desc">
+        Novel federated fuzzy clustering algorithm for decentralized incomplete longitudinal behavioral data. Handles missing data through multiple imputation integrated within the federated loop. Achieves <strong>~93% accuracy</strong> vs ~52% for decentralized FCM baseline under 20% missingness.
+      </p>
+      <div class="metrics">
+        <span class="metric blue">~93% accuracy</span>
+        <span class="metric green">N=30k, 8 clients (simulation)</span>
+        <span class="metric cyan">N=957, 4 real cohorts</span>
+        <span class="metric purple">20% missingness</span>
+      </div>
+      <div class="stack">
+        <span class="stack-item">Python</span>
+        <span class="stack-item">Federated Learning</span>
+        <span class="stack-item">Fuzzy Clustering</span>
+        <span class="stack-item">Multiple Imputation</span>
+        <span class="stack-item">NIH-funded</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Publications ───────────────────────────────────────────────────── -->
+<section id="publications">
+  <h2 class="section-title">Publications</h2>
+
+  <div class="pub-group-label">Under Review / In Preparation</div>
+
+  <div class="pub-item">
+    <span class="pub-num">1</span>
+    <div class="pub-body">
+      <div class="pub-title">FUSE: Federated Fuzzy Consensus Clustering Under Missing Data for Longitudinal Digital Health Trials</div>
+      <div class="pub-authors"><strong>H. Ngo</strong>, H. Fang, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">ACM Transactions on Computing for Healthcare</span>
+        <span class="pub-year">Under review</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">2</span>
+    <div class="pub-body">
+      <div class="pub-title">FedAutoCluster: Distilling Clustering Expert Judgment into Federated Per-Site LLM Agents</div>
+      <div class="pub-authors"><strong>H. Ngo</strong> et al.</div>
+      <div class="pub-row">
+        <span class="pub-year">In preparation</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-group-label">Journal Articles</div>
+
+  <div class="pub-item">
+    <span class="pub-num">3</span>
+    <div class="pub-body">
+      <div class="pub-title">Federated fuzzy clustering for decentralized incomplete longitudinal behavioral data</div>
+      <div class="pub-authors"><strong>H. Ngo</strong>, H. Fang, J. Rumbut, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE Internet of Things Journal</span>
+        <span class="pub-year">2023</span>
+        <span class="pub-if">IF 8.2</span>
+        <span class="pub-cite">14 citations</span>
+        <a class="pub-link" href="https://doi.org/10.1109/JIOT.2023.3343719" target="_blank" rel="noopener">doi →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">4</span>
+    <div class="pub-body">
+      <div class="pub-title">Cooperative perception with V2V communication for autonomous vehicles</div>
+      <div class="pub-authors"><strong>H. Ngo</strong>, H. Fang, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE Transactions on Vehicular Technology</span>
+        <span class="pub-year">2023</span>
+        <span class="pub-if">IF 6.1</span>
+        <span class="pub-cite">73 citations</span>
+        <a class="pub-link" href="https://doi.org/10.1109/TVT.2023.3264020" target="_blank" rel="noopener">doi →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">5</span>
+    <div class="pub-body">
+      <div class="pub-title">A survey of collaborative machine learning using 5G vehicular communications</div>
+      <div class="pub-authors">S. V. Balkus, H. Wang, B. D. Cornet, C. S. Mahabal, <strong>H. Ngo</strong>, H. Fang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE Communications Surveys &amp; Tutorials</span>
+        <span class="pub-year">2022</span>
+        <span class="pub-if">IF 35.6</span>
+        <span class="pub-cite">128 citations</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">6</span>
+    <div class="pub-body">
+      <div class="pub-title">An overview of wireless body area networks for mobile health applications</div>
+      <div class="pub-authors">B. Cornet, H. Fang, <strong>H. Ngo</strong>, E. W. Boyer, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE Network</span>
+        <span class="pub-year">2022</span>
+        <span class="pub-if">IF 9.3</span>
+        <span class="pub-cite">88 citations</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">7</span>
+    <div class="pub-body">
+      <div class="pub-title">A review of harmonization methods for studying dietary patterns</div>
+      <div class="pub-authors">V. S. Gurugubelli, H. Fang, J. M. Shikany, S. V. Balkus, J. Rumbut, <strong>H. Ngo</strong>, et al.</div>
+      <div class="pub-row">
+        <span class="pub-venue">Smart Health</span>
+        <span class="pub-year">2022</span>
+        <span class="pub-if">IF 5.2</span>
+        <span class="pub-cite">14 citations</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">8</span>
+    <div class="pub-body">
+      <div class="pub-title">Beamforming and scalable image processing in vehicle-to-vehicle networks</div>
+      <div class="pub-authors"><strong>H. Ngo</strong>, H. Fang, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">Journal of Signal Processing Systems</span>
+        <span class="pub-year">2022</span>
+        <span class="pub-if">IF 1.8</span>
+        <span class="pub-cite">12 citations</span>
+        <a class="pub-link" href="https://doi.org/10.1007/s11265-021-01696-6" target="_blank" rel="noopener">doi →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-group-label">Conference Papers &amp; Presentations</div>
+
+  <div class="pub-item">
+    <span class="pub-num">9</span>
+    <div class="pub-body">
+      <div class="pub-title">Deep learning-based adaptive beamforming for mmWave wireless body area network</div>
+      <div class="pub-authors"><strong>H. Ngo</strong>, H. Fang, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE GLOBECOM 2020</span>
+        <span class="pub-year">2020</span>
+        <span class="pub-award">🏆 Best Paper Award — IEEE ComSoc</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">10</span>
+    <div class="pub-body">
+      <div class="pub-title">Intelligent fuzzifier-based cluster validation for incomplete longitudinal digital trial data</div>
+      <div class="pub-authors"><strong>H. Ngo</strong>, H. Fang, H. Wang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE/ACM CHASE 2022</span>
+        <span class="pub-year">2022</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-item">
+    <span class="pub-num">11</span>
+    <div class="pub-body">
+      <div class="pub-title">XR-enabled digital twins applications in longitudinal trials</div>
+      <div class="pub-authors">J. Matos, <strong>H. Ngo</strong>, H. Wang, H. Fang</div>
+      <div class="pub-row">
+        <span class="pub-venue">IEEE/ACM CHASE 2025</span>
+        <span class="pub-year">2025</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="scholar-link">
+    Full list (16 publications) on <a href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar →</a>
+  </p>
+</section>
+
+<!-- ── Experience ─────────────────────────────────────────────────────── -->
+<section id="experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div>
+        <div class="tl-role">Postdoctoral Researcher — Machine Learning Research, XR AI Lab</div>
+        <div class="tl-org">Yeshiva University, Katz School of Science &amp; Health · New York, NY</div>
+        <div class="tl-date">November 2025 – Present</div>
+        <div class="tl-desc">
+          Conducting independent ML research on federated learning, health AI, and agentic LLM systems. Developing FUSE and FedAutoCluster (see Projects). Built LangChain/LangGraph agentic workflows with VectorDB-backed RAG. Instructor for graduate-level Robotics (Spring 2026); mentoring graduate students on experimental design and evaluation.
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag">Federated Learning</span><span class="tl-tag">Health AI</span>
+          <span class="tl-tag">QLoRA</span><span class="tl-tag">LangChain/LangGraph</span>
+          <span class="tl-tag">Robotics (Instructor)</span>
         </div>
       </div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-      </nav>
     </div>
-  </header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        I am a postdoctoral researcher at Yeshiva University focused on building <strong>secure, privacy-preserving, and trustworthy AI/ML</strong> for real-world, high-dimensional data. 
-        My work integrates <strong>federated learning</strong>, <strong>fuzzy clustering</strong>, and <strong>visualization-aided validation</strong> with applications in digital health, IoT/CPS, and data systems for AI.
-      </p>
-      <ul class="compact">
-        <li>Ph.D., Computer & Information Science — UMass Dartmouth</li>
-        <li>2021 IEEE ComSoc MCTC Best Paper Award</li>
-        <li>NSF/NIH project experience (privacy-aware analytics; cooperative perception/V2X)</li>
-      </ul>
-    </section>
-
- <section id="publications" class="card">
-      <h2>Publications</h2>
-      <ol class="pubs">
-        <li>
-          Ngo, H.; Fang, H.; Wang, H. (2023).
-          <em>Federated fuzzy clustering for decentralized incomplete longitudinal behavioral data</em>.
-          <strong>IEEE Internet of Things Journal</strong>.
-          <a href="https://doi.org/10.1109/JIOT.2023.3343719" target="_blank" rel="noopener">doi:10.1109/JIOT.2023.3343719</a>
-        </li>
-        <li>
-          Ngo, H.; Fang, H.; Wang, H. (2023).
-          <em>Cooperative perception with V2V communication for autonomous vehicles</em>.
-          <strong>IEEE Transactions on Vehicular Technology</strong>.
-          <a href="https://doi.org/10.1109/TVT.2023.3264020" target="_blank" rel="noopener">doi:10.1109/TVT.2023.3264020</a>
-        </li>
-        <li>
-          Ngo, H.X.; Fang, H.; Wang, H. (2021).
-          <em>Beamforming and scalable image processing in vehicle-to-vehicle networks</em>.
-          <strong>Journal of Signal Processing Systems</strong>.
-          <a href="https://doi.org/10.1007/s11265-021-01696-6" target="_blank" rel="noopener">doi:10.1007/s11265-021-01696-6</a>
-        </li>
-      </ol>
-      <p class="small">
-        Full list on <a href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar →</a>
-      </p>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="tile">
-          <h3>Federated Longitudinal Modeling</h3>
-          <p>PyTorch + Lightning pipeline for multi-site time-series; privacy-preserving training/evaluation, uncertainty reporting; AWS orchestration.</p>
-          <p class="tech">PyTorch · Lightning · AWS · HF Datasets</p>
-        </article>
-        <article class="tile">
-          <h3>Representation Learning for Retrieval</h3>
-          <p>Embedding-based similarity search over heterogeneous clinical signals; VectorDB-style indexing for cohorting and audit.</p>
-          <p class="tech">VectorDB · Retrieval · Evaluation</p>
-        </article>
-        <article class="tile">
-          <h3>Robustness & Explainability Toolkit</h3>
-          <p>Perturbation tests, ablations, SHAP-style attribution for incomplete/irregular data; reporting templates aligned to product goals.</p>
-          <p class="tech">Explainability · Robustness · Reporting</p>
-        </article>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div>
+        <div class="tl-role">Graduate Research Assistant — Machine Learning &amp; Data Science</div>
+        <div class="tl-org">University of Massachusetts Dartmouth · Dartmouth, MA</div>
+        <div class="tl-date">June 2019 – October 2025 · NSF ECCS 2010366; NSF-IIS 2140729; NIH R01DK129432</div>
+        <div class="tl-desc">
+          PhD research spanning federated fuzzy clustering (FeMIFuzzy), real-time BEV-map V2V cooperative perception (IEEE TVT), and deep learning-based mmWave WBAN beamforming (IEEE GLOBECOM Best Paper). Built reproducible evaluation harnesses with multi-trial runs, structured logging, and validation pipelines on Linux/HPC.
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag">NSF-funded</span><span class="tl-tag">NIH-funded</span>
+          <span class="tl-tag">Computer Vision</span><span class="tl-tag">Federated Learning</span>
+          <span class="tl-tag">PyTorch</span><span class="tl-tag">Linux/HPC</span>
+        </div>
       </div>
-    </section>
-
-    <section id="teaching" class="card">
-      <h2>Teaching</h2>
-      <ul>
-        <li><strong>Robotics (Spring 2026)</strong>, Yeshiva University — perception, detection/tracking, navigation; project-based labs.</li>
-        <li><strong>Machine Learning / Advanced Data Mining (GTA)</strong>, UMass Dartmouth — tutorials and labs for regression, trees/ensembles, PCA, evaluation; Python/R/MATLAB workflows.</li>
-        <li><strong>Computer Graphics (GTA)</strong>, UMass Dartmouth — WebGL/Three.js labs on geometry, lighting, animation, texturing.</li>
-      </ul>
-    </section>
-
-    <section id="cv" class="card">
-      <h2>CV</h2>
-      <p>Download my latest CV: <a href=".\Hieu_Ngo_Resume.pdf" id="cv-link">(PDF)</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Hieu (Henry) Ngo. Built with HTML/CSS/JS. Hosted on GitHub Pages.</p>
     </div>
-  </footer>
 
-  <script src="assets/script.js"></script>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div>
+        <div class="tl-role">Software Engineering Intern — Clinical Data Science</div>
+        <div class="tl-org">UMass Chan Medical School · Worcester, MA</div>
+        <div class="tl-date">June 2021 – August 2021</div>
+        <div class="tl-desc">
+          Built SQL/Python/SAS ETL and QC pipelines for 6 multi-site cohorts including 2 national datasets. Harmonized 3M+ records, 451 variables, 35-year follow-up for NIH R01-funded federated health AI research.
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag">SQL</span><span class="tl-tag">Python</span>
+          <span class="tl-tag">SAS</span><span class="tl-tag">ETL</span>
+          <span class="tl-tag">Clinical Data</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div>
+        <div class="tl-role">Research Assistant — Reproducible Computing (DataflowNB)</div>
+        <div class="tl-org">University of Massachusetts Dartmouth · Dartmouth, MA</div>
+        <div class="tl-date">June 2018 – August 2018</div>
+        <div class="tl-desc">
+          Improved Jupyter Notebook reproducibility for the dfkernel/DataflowNB project. Debugged re-execution and dependency tracking behaviors (Python/JavaScript); implemented cell-status tracking and visualization (JavaScript/CSS).
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag">Python</span><span class="tl-tag">JavaScript</span><span class="tl-tag">Jupyter</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:28px;">
+    <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;color:var(--muted)">Education</h3>
+    <div class="tl-item" style="margin-bottom:12px">
+      <div class="tl-dot"></div>
+      <div>
+        <div class="tl-role">Ph.D., Engineering &amp; Applied Science (Computer Science &amp; Information Systems)</div>
+        <div class="tl-org">University of Massachusetts Dartmouth</div>
+        <div class="tl-date">October 2025 · Advisor: Prof. Julia Hua Fang</div>
+        <div class="tl-desc" style="font-style:italic;">Dissertation: iMIF2V2 — Intelligent Multiple Imputation Federated Fuzzy Clustering with Visualization and Validation for Longitudinal Digital Trials</div>
+      </div>
+    </div>
+    <div class="tl-item" style="margin-bottom:0">
+      <div class="tl-dot"></div>
+      <div>
+        <div class="tl-role">B.S., Computer Science</div>
+        <div class="tl-org">University of Massachusetts Dartmouth</div>
+        <div class="tl-date">May 2019 · Chancellor's List · Dean's List</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Awards ─────────────────────────────────────────────────────────── -->
+<section id="awards">
+  <h2 class="section-title">Awards &amp; Funding</h2>
+  <div class="awards-grid">
+    <div class="award-item">
+      <div class="award-icon">🏆</div>
+      <div>
+        <div class="award-title">Best Paper Award</div>
+        <div class="award-sub">IEEE ComSoc Multimedia Communications TC · IEEE GLOBECOM 2020 · 2021</div>
+      </div>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🎓</div>
+      <div>
+        <div class="award-title">CIS Graduate Research Award</div>
+        <div class="award-sub">University of Massachusetts Dartmouth · 2023</div>
+      </div>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">✈️</div>
+      <div>
+        <div class="award-title">NSF Student Travel Grant</div>
+        <div class="award-sub">IEEE/ACM CHASE Conference · 2022</div>
+      </div>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🏅</div>
+      <div>
+        <div class="award-title">CMU × NVIDIA Federated Learning Hackathon — Team Lead</div>
+        <div class="award-sub">Privacy-preserving biobank data harmonization dashboard · 2026</div>
+      </div>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🔬</div>
+      <div>
+        <div class="award-title">NSF Grants (Co-investigator)</div>
+        <div class="award-sub">NSF ECCS 2010366 · NSF-IIS 2140729 · Cooperative perception &amp; privacy-aware analytics</div>
+      </div>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🏥</div>
+      <div>
+        <div class="award-title">NIH R01 Grant (Contributor)</div>
+        <div class="award-sub">R01DK129432 · Longitudinal dietary trial data analysis</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ────────────────────────────────────────────────────────── -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p style="color:var(--muted);font-size:0.9rem;margin-bottom:18px;">
+    Open to Research Scientist, Applied Scientist, and ML Engineer opportunities. Feel free to reach out by email or connect on LinkedIn.
+  </p>
+  <div class="contact-row">
+    <a class="btn btn-primary" href="mailto:ngohieu241@gmail.com">✉ ngohieu241@gmail.com</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/hieu-ngo-014901a3/" target="_blank" rel="noopener">💼 LinkedIn</a>
+    <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=NfCIh8gAAAAJ&hl=en" target="_blank" rel="noopener">📄 Google Scholar</a>
+    <a class="btn btn-ghost" href="https://github.com/HieuNgo" target="_blank" rel="noopener">⌨ GitHub</a>
+    <a class="btn btn-ghost" href="https://orcid.org/0000-0003-2595-2166" target="_blank" rel="noopener">🔬 ORCID</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    Hieu (Henry) Ngo · Union City, NJ ·
+    <a href="mailto:ngohieu241@gmail.com">ngohieu241@gmail.com</a>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
